@@ -1,0 +1,32 @@
+body {
+background-color: #3eaf76;
+}
+
+h1 {
+  Color: #2384eb;
+  font-family: Veranda, Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  Color: #7fccea;
+  font-family: Veranda, Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  Color: #93e9be;
+  font-family: Veradana, Arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  Color: #121154;
+  font-family: Georgia, serif;
+  line-height: 2.0;
+  margin-left: 10px;
+}
+
+hr {
+  border: 1px dotted #121154;
+}

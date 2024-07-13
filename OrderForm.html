@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--OrderForm.html
+An order form for the Orange Store
+-->
+<html lang = "en">
+<head><title>Orange Store Order Form</title>
+<meta charset = "utf-8" />
+<link rel="stylesheet" href="css/OrangeStore.css">
+<style>
+  .myDiv {
+    text-align: center;
+    border: 5px outset #ff8c00;
+    background-color: ivory;
+  }
+  body {
+    background-color: #3d3d3d;
+  }
+</style>
+<script type="text/javascript" src="OrderForm.js">
+</script>
+<script type = "text/javascript" src = "OrderFormAjax.js" >
+</script>
+</head>
+
+<body>
+<div class="myDiv">
+  <h1 style = "font-family:Verdana, Arial, sans-serif;">Please enter your information below<h1>
+</div>
+
+<p>
+  <form id = "myForm" action = "">
+  Name (Firstname, Middle_initial, Lastname):
+  <input type="text" id="theName" size="25" name ="theName"
+  onchange = "chkName()"
+  onsubmit="chkName()" />
+  <br /><br />
+  Address:
+  <input type="text" id="theAddress" size="25" name = "theAddress"
+  onchange = "chkAddress()" />
+  <br /><br />
+  Credit Card Company:
+  <input type="radio" name="creditCardComapny" value="visa"
+  onclick="cardChoise('Visa')" />
+  Visa
+  <input type="radio" name="creditCardComapny" value="masterCard" checked="checked"
+  onclick="cardChoise('Master Card')" />
+  Master Card
+  <input type="radio" name="creditCardComapny" value="discover" checked="checked"
+  onclick="cardChoise('Discover')" />
+  Discover
+  <br /><br />
+  Credit Card Number (####-####-####-####):
+  <input type="text" id="cardNum" size="25" name = "cardNum"
+  onchange="chkCardNum()" />
+  <br /><br />
+  Phone Number(###-###-####):
+  <input type="text" id="phoneNum" size="25" name = "phoneNum"
+  onchange="chkPhoneNum()" />
+  <br /><br />
+  E-mail Address:
+  <input type="text" id="eMail" size="25" name = "eMail"
+  onchange="chkEMail()" />
+  <br /><br />
+  Zip code:
+  <input class = "zip" type = "text" name = "zip" id="zip"
+  size = "10" onchange = "getPlace()" />
+  <br /><br />
+  City:
+  <input class = "city" type = "text" name = "city"
+  id="city" size="30" />
+  <br /><br />
+  State:
+  <input class = "state" type = "text" name = "state"
+  id="state" size="30" />
+  <br /><br />
+  <table>
+  <tr>
+  	<th></th>
+    <th>Orange Duck</th>
+  	<th>Orange Bunny</th>
+    <th>Orange Turtle</th>
+  	<th>Orange Pigeon</th>
+    <th>Orange Goat</th>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <th>A rare orange duck</th>
+    <th>A strange orange bunny</th>
+    <th>A misterious orange turtle</th>
+    <th>A smart orange pigeon</th>
+    <th>A mean orange goat</th>
+  </tr>
+  <tr>
+  	<th>Price($)</th>
+  	<td>$5.00</td>
+  	<td>$30.00</td>
+  	<td>$35.00</td>
+    <td>$10.00</td>
+    <td>$50.00</td>
+  </tr>
+  <tr>
+  	<th>Shipping Weight(lbs)</th>
+    <td>3.5</td>
+    <td>5.5</td>
+  	<td>3.5</td>
+    <td>2</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <th>Number Ordered</th>
+    <td><input type="number" id="ducks" size="5"
+      max = "110" min = "0" onchange="chkDucks()" /></td>
+    <td><input type="number" id="bunnies" size="5"
+      max = "110" min = "0" onchange="chkBunnies()" /></td>
+    <td><input type="number" id="turtles" size="5"
+      max = "110" min = "0" onchange="chkTurtles" /></td>
+    <td><input type="number" id="pigeons" size="5"
+      max = "110" min = "0" onchange="chkPigeons()" /></td>
+    <td><input type="number" id="goats" size="5"
+      max = "110" min = "0" onchange="chkGoats()" /></td>
+  </tr>
+  </table>
+  <input type = "reset" value = "Reset" />
+  <input type = "submit" value = "Submit"
+  onclick="chkOrder()" />
+  </form>
+</p>
+<script>
+ document.getElementById("theName").onchange = function() {chkName()};
+ document.getElementById("theAddress").onchange = function() {chkAddress()};
+ document.getElementById("cardNum").onchange = function() {chkCardNum()};
+ document.getElementById("phoneNum").onchange = function() {chkPhoneNum()};
+ document.getElementById("eMail").onchange = function() {chkEMail()};
+ document.getElementById("pigeons").onsubmit = function() {chkOrder()};
+</script>
+</body>
+</html>

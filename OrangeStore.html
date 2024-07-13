@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--OrangeStore.html
+    The front page for my orange store
+		assignement 6 problems 1&2 are on Stop Geting Oranges Stuck(SGOS.html)
+		problems 3&4 are here
+		problem 5 is on the Orange Goat(OrangeGoat.html)
+		problem 6 is on the orange turtle(OrangeTurtle.html)
+    -->
+<!--By: Samuel Schmitz
+    -->
+<html lang = "en">
+<head><title> The Orange Store</title>
+<meta charset = "utf-8" />
+<link rel="stylesheet"
+href="css/OrangeStore.css">
+<script type="text/javascript" src="OrangeStore.js">
+</script>
+</head>
+<body>
+
+<h1> The Orange Store </h1>
+
+<hr />
+<h3>Here are our avaible items:</h3>
+<ol>
+	<li>Orange Duck</li>
+	<li>Orange Bunny</li>
+	<li>Orange Turtle</li>
+	<li>Orange Pigeon</li>
+	<li>Orange Goat</li>
+</ol>
+<hr />
+<br />
+<h3>See below for more info on our products:</h3>
+<p>
+
+<a href="OrangeDuck.html">
+<figure>
+<figcaption>Orange Duck</figcaption>
+<img src = "images/OrangeDuck2.jpg" alt = "Picture of an Orange Duck"
+height="150" />
+</figure></a>
+
+<a href="OrangeBunny.html">
+<figure>
+<figcaption>Orange Bunny</figcaption>
+<img src = "images/OrangeBunnies.jpg" alt = "Picture of Two Orange Bunnies"
+height = "150"/>
+</figure></a>
+
+<a href="OrangeTurtle.html">
+<figure>
+<figcaption>OrangeTurtle</figcaption>
+<img src = "images/OrangeTurtle.jpg" alt = "Picture of an Orange Turtle"
+height = "150" />
+</figure></a>
+
+<a href="OrangePigeon.html">
+<figure>
+<figcaption>Orange Pigeon</figcaption>
+<img src = "images/OrangePigeon.jpg" alt = "Picture of an Orange Pigeon"
+height = "150" />
+</figure></a>
+
+<a href="OrangeGoat.html">
+<figure>
+<figcaption>Orange Goat</figcaption>
+<img src = "images/OrangeGoat.jpg" alt = "Picture of an Orange Goat"
+height = "150" />
+</figure></a>
+</p>
+<p class="clear">
+</p>
+<hr />
+
+<h3>Check out our prices:</h3>
+<table>
+<tr>
+	<th></th>
+	<th>Orange Duck</th>
+	<th>Orange Bunny</th>
+	<th>Orange Turtle</th>
+	<th>Orange Pigeon</th>
+	<th>Orange Goat</th>
+</tr>
+<tr>
+	<th>Price($)</th>
+	<td>$5.00</td>
+	<td>$30.00</td>
+	<td>$35.00</td>
+	<td>$10.00</td>
+	<td>$50.00</td>
+</tr>
+<tr>
+	<th>Estimated Savings($)</th>
+	<td>$3.99</td>
+	<td>$9.99</td>
+	<td>$14.99</td>
+	<td>-$10.00</td>
+	<td>$49.99</td>
+</tr>
+</table>
+<br /><hr />
+<h3>Fill out the form below to order the products</h3>
+<a href="OrderFormPHP.html">Order Form</a>
+<hr />
+
+<h3>Please click on the links below to help make our world better</h3>
+<p>
+<a href="DSOJ.html">Why You Shouldn't Spill Orange Juice</a><br />
+<a href="BDLC.html">Bunnies Don't Like Carrots</a><br />
+<a href="SGOS.html">How to Stop Getting Oranges Stuck Everywhere</a><br />
+<a href="https://www.businessinsider.com/study-pigeons-really-arent-dumb-2013-6"> Why are Pigeons So Dumb?</a><br />
+<a href="https://www.wartburgstore.com/">Wartburg Store</a><br />
+</p><hr />
+
+<h3>Change the look of our website</h3>
+<p>
+
+<form id="backChange">
+Background:
+	<label><input type="radio" name="backColor" value="darkGray"
+	onclick="setColor('background', 'darkGray')" />
+	Dark Gray</label>
+	<label><input type="radio" name="backColor" value="green"
+	onclick="setColor('background', 'green')" />
+	Green</label>
+	<label><input type="radio" name="backColor" value="red"
+	onclick="setColor('background', 'red')" />
+	Red</label>
+	<label><input type="radio" name="backColor" value="blue"
+	onclick="setColor('background', 'blue')" />
+	Blue</label>
+</form>
+<form id="foreChange"> Foreground:
+	<label><input type="radio" name="backColor" value="ivory"
+	onclick="setColor('foreground', 'ivory')" />
+	Ivory</label>
+	<label><input type="radio" name="backColor" value="purple"
+	onclick="setColor('foreground', 'purple')" />
+	Purple</label>
+	<label><input type="radio" name="backColor" value="orange"
+	onclick="setColor('foreground', 'orange')" />
+	Orange</label>
+	<label><input type="radio" name="backColor" value="yellow"
+	onclick="setColor('foreground', 'yellow')" />
+	Yellow</label>
+</form></p>
+
+</body>
+</html>

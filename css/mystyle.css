@@ -1,0 +1,55 @@
+body {
+  background-color: #3d3d3d;
+}
+
+h1 {
+  Color: #ff8c00;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  color: #ff8c00;
+  margin-left: 10px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+h4 {
+  color: ivory;
+  margin-left: 20px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+h5 {
+  color: #ff8c00;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+  Color: ivory;
+  margin-left: 20px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: circle;
+  Color: ivory;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 20px;
+}
+
+ol {
+  margin: 20px;
+  list-style-type: upper-roman;
+  Color: ivory;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+table {
+  Color: ivory;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+hr {
+  Color: ivory;
+}

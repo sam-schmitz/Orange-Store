@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--SGOS.html
+    How to stop getting oranges stuck
+    Assignemnt 6 problems 1&2 are located here
+    -->
+<!--By: Samuel Schmitz
+    -->
+<html lang = "en">
+<head><title> Stop Getting Oranges Stuck</title>
+<meta charset = "utf-8" />
+<style>
+  h2 {
+    text-align: center;
+  }
+</style>
+<script type="text/javascript" src="SGOS.js">
+</script>
+</head>
+<body>
+<h2>Stop Getting Oranges Stuck</h2>
+<hr />
+<blockquote>
+<p>
+  Generally fruit rots quickly. Oranges in thier natural state also rot
+reletivly quickly in their natural state(probably because they are fruit).
+If you get one stuck somewhere you can't get it out it will likely begin
+to rot. To avoid this don't get your <span style="color:#ff8c00;">oranges</span> stuck in places that you can't
+get them unstuck.
+</p>
+</blockquote>
+  <div  style = "visibility: visible"
+  onmouseover="flipImag()" onmouseleave="flipImag()" >
+  <h3>Orange:</h3>
+</div>
+<form action="">
+  <p>
+    <label>
+      x-coordinate:
+      <input type="text" id="leftCoord" size="3" />
+    </label>
+    <br />
+    <label>
+      y-coordinate:
+      <input type="text" id="topCoord" size="3" />
+    </label>
+    <br />
+    <input type="button" value="Move It"
+    onclick="moveIt('orange',
+    document.getElementById('topCoord').value,
+    document.getElementById('leftCoord').value)" />
+  </p>
+</form>
+  <div id="orange" style="visibility: visible;
+  position: absolute; top: 280px; left:0;">
+    <img src="images/orange.png" alt="(Picture of an Orange)"
+    height = 160 />
+  </div>
+</body>
+</html>

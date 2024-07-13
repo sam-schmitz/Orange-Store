@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- OrderFormPHP.HTML
+By: Sam Schmitz-->
+<html lang = "en">
+<head>
+  <title>Order Form</title>
+  <meta charset = "utf-8" />
+  <link rel="stylesheet" href="css/OrangeStore.css">
+  <style type = "text/css">
+    .myDiv {
+      text-align: center;
+      border: 5px outset #ff8c00;
+      background-color: ivory;
+    }
+    td, th, table {
+      border: thin solid ivory;
+    }
+  </style>
+  <script type="text/javascript" src="OrderForm.js">
+  </script>
+</head>
+<body>
+  <div class="myDiv">
+    <h1 style = "font-family:Verdana, Arial, sans-serif;">Please enter your information below<h1>
+  </div>
+  <br />
+  <form action = "http://localhost/A10/OrderForm.php"
+  method = "post">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type = "text" name = "theName" size = "30"
+        id = "theName" onchange = "chkName()" /></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type = "text" name = "theAddress" size = "30"
+        id = "theAddress" onchange = "chkAddress()" /></td>
+    </tr>
+    <tr>
+      <td>Credit Card Company:</td>
+      <td><input type = "radio" name = "creditCardCompany" value = "visa"
+        checked = "checked" onclick="cardChoise('Visa')" />Visa
+        <input type = "radio" name = "creditCardCompany" value = "masterCard"
+        checked = "checked" onclick="cardChoise('masterCard')" />Master Card
+        <input type = "radio" name = "creditCardCompany" value = "discover"
+        checked = "checked" onclick="cardChoise('discover')" />Discover
+      </td>
+    <tr>
+      <td>Credit Card Number:</td>
+      <td><input type = "text" name = "cardNum" size = "30"
+        id = "cardNum" onchange="chkCardNum()" /></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type = "text" name = "phoneNum" size = "30"
+        id = "phoneNum" onchange="chkPhoneNum()" /></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type =  "text" name = "eMail" size = "30"
+        id = "eMail" onchange="chkEMail()" /></td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Shipping weight</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Orange Duck</td>
+      <td>$5.00</td>
+      <td>3.5lbs</td>
+      <td><input type = "number" name = "ducks" size = "3"
+        id = "ducks" max = "110" min = "0" /></td>
+    </tr>
+    <tr>
+      <td>Orange Bunny</td>
+      <td>$30.00</td>
+      <td>5.5lbs</td>
+      <td><input type = "number" name = "bunnies" size = "3"
+        id = "bunnies" max = "110" min = "0" /></td>
+    </tr>
+    <tr>
+      <td>Orange Turtles</td>
+      <td>$35.00</td>
+      <td>3.5lbs</td>
+      <td><input type = "number" name = "turtles" size = "3"
+        id = "turtles" max = "110" min = "0" /></td>
+    </tr>
+    <tr>
+      <td>Orange Pigeons</td>
+      <td>$10.00</td>
+      <td>2lbs</td>
+      <td><input type = "number" name = "pigeons" size = "3"
+        id = "pigeons" max = "110" min = "0" /></td>
+    </tr>
+    <tr>
+      <td>Orange Goat</td>
+      <td>$50.00</td>
+      <td>150lbs</td>
+      <td><input type = "number" name = "goats" size = "3"
+        id = "goats" max = "110" min = "0" /></td>
+    </tr>
+  </table>
+  <br />
+  <p>
+    <input type = "submit" value = "Submit Order" />
+    <input type = "reset" value = "Clear Order Form" />
+  </p>
+  </form>
+</body>
+</html>
